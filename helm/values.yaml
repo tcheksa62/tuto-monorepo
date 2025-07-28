@@ -15,10 +15,10 @@ ingress:
   annotations: {}
   hosts:
   - tuto-mono.apps.ari.np.internal.auchan.com
-  tls: []
-  #  - secretName: tuto-mono.apps.ari.np.internal.auchan.com
-  #    hosts:
-  #      - tuto-mono.apps.ari.np.internal.auchan.com
+  tls: 
+   - secretName: tuto-mono.apps.ari.np.internal.auchan.com
+     hosts:
+       - tuto-mono.apps.ari.np.internal.auchan.com
 
 client:
   replicaCount: 1
