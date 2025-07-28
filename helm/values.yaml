@@ -11,7 +11,7 @@ global:
 
 ingress:
   enabled: true
-  className: ""
+  className: "nginx"
   annotations: {}
   hosts:
   - tuto-mono.apps.ari.np.internal.auchan.com
