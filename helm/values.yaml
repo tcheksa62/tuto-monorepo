@@ -105,4 +105,4 @@ server:
   affinity: {}
 
 vso:
-  enabled: true
+  enabled: false
