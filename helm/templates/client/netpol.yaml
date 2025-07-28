@@ -13,7 +13,7 @@ spec:
       protocol: TCP
   podSelector:
     matchLabels:
-      app.kubernetes.io/name: {{ include "template.fullname" . }}-client
-      app.kubernetes.io/name: {{ include "template.fullname" . }}-server
+      {{- include "template.client.selectorLabels" . | nindent 4 }}
+      {{- include "template.server.selectorLabels" . | nindent 4 }}
   policyTypes:
   - Ingress
