@@ -7,10 +7,7 @@ spec:
   - from:
     - namespaceSelector:
         matchLabels:
-          name: ingress-nginx
-    ports:
-    - port: 80
-      protocol: TCP
+          kubernetes.io/metadata.name: ingress-nginx
   podSelector: {}
   policyTypes:
   - Ingress
